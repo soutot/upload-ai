@@ -1,0 +1,43 @@
+{
+  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "jest",
+    "import"
+  ],
+  "rules": {
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+        "error",
+        { 
+          "ignoreRestSiblings": true,
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_",
+          "caughtErrorsIgnorePattern": "^_"
+        }
+    ],
+    "import/prefer-default-export": "off",
+    "prefer-const": "off",
+    "quote-props": "off",
+    "padded-blocks": "off",
+    "multiline-ternary": "off",
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "operator-linebreak": "off",
+    "spaced-comment": "off",
+    "react/jsx-key": "off", // because does not detect key in spread operator
+    "react/display-name": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ]
+}
