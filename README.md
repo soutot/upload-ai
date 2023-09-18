@@ -5,7 +5,9 @@ In this project we have the use case of a user requesting OpenAI to generate a t
 
 This project uses:
 
-- WebAssembly ([FFMPEG](https://github.com/ffmpegwasm/ffmpeg.wasm)) to transcript the video to text
+- WebAssembly ([FFMPEG](https://github.com/ffmpegwasm/ffmpeg.wasm)) to convert the video to audio
+- OpenAI whisper to transcript the audio to text
+- OpenAI chat to generate suggestions
 - [ShadcnUI](https://github.com/shadcn-ui/ui) to create UI elements
 - [Docker](https://www.docker.com/) to manage the environment containers
 - [pnpm](https://pnpm.io/) to manage modules

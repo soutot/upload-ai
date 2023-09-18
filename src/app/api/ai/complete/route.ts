@@ -1,5 +1,4 @@
-import {streamToResponse, OpenAIStream, StreamingTextResponse} from 'ai'
-import {NextApiResponse} from 'next'
+import {OpenAIStream, StreamingTextResponse} from 'ai'
 import {NextResponse} from 'next/server'
 import {z} from 'zod'
 
